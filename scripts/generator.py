@@ -100,10 +100,10 @@ WICHTIG:
 
     try:
         response = client.models.generate_content(
-    model="gemini-2.0-flash",
-    contents=prompt
-)
-html = response.text.strip()
+            model="gemini-2.0-flash",
+            contents=prompt
+        )
+        html = response.text.strip()
 
         # Clean up if markdown backticks slipped through
         if html.startswith("```"):
